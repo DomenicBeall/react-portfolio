@@ -1,0 +1,40 @@
+@import "./angle-mixin.scss";
+@import "./variables.scss";
+
+header {
+    height: 5rem;
+
+    background-color: white;
+    @include angle(after);
+
+    color: $hightop-orange;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.header-sect {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-link {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+.header-link:hover {
+    transform: scale(1.1);
+}
+
+a, a:hover, a:visited, a:focus {
+    text-decoration: none;
+    color: $hightop-orange;
+
+}

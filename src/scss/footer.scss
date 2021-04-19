@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    height: 4rem;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    color: $hightop-orange;
+}

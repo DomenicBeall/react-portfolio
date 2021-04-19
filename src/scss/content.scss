@@ -1,0 +1,95 @@
+@import "./variables.scss";
+
+.container {
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.white {
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    width: 100%;
+}
+
+.social-img {
+    width: 6rem;
+    padding: 1rem;
+}
+
+.social-name {
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.social-card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    transition: 0.1s linear all;
+}
+
+.social-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card {
+    width: 20rem;
+    min-height: 20rem;
+
+    margin: 1rem;
+
+    border: 5px solid white;
+
+    background-color: white;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
+a, a:hover, a:focus, a:visited {
+    color: $hightop-orange;
+    font-size: 1rem;
+
+    padding: 0.5rem;
+
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    color: $hightop-orange;
+    font-weight: 1000;
+
+    padding: 1rem;
+}

@@ -1,9 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+import About from './Pages/About';
+import Portfolio from './Pages/Portfolio';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
-    <h1>This is where it starts!</h1>
+    <Router>
+      <Header/>
+      <Route exact path="/" component={About}/>
+      <Route exact path="/portfolio" component={Portfolio}/>
+      <Route exact path="/contact" component={Contact}/>
+      <Footer/>
+    </Router>
   );
 }
 
